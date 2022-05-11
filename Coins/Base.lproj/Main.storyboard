@@ -16,7 +16,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="QJA-ym-VgO">
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="u8y-Zn-4x0">
                             <size key="itemSize" width="128" height="128"/>
                             <size key="headerReferenceSize" width="0.0" height="0.0"/>
                             <size key="footerReferenceSize" width="0.0" height="0.0"/>
@@ -26,7 +26,7 @@
                             <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="Cell" id="xOx-aB-X0T" customClass="CoinCellCollectionViewCell" customModule="Coins" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="4iR-9E-wOx">
+                                <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="ffT-XI-3u2">
                                     <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
@@ -43,13 +43,12 @@
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
-                                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                     <constraints>
                                         <constraint firstAttribute="trailing" secondItem="Bki-w1-5C6" secondAttribute="trailing" constant="43" id="Cd4-7g-DLF"/>
-                                        <constraint firstItem="Bki-w1-5C6" firstAttribute="leading" secondItem="4iR-9E-wOx" secondAttribute="leading" constant="43" id="NdT-to-dgh"/>
-                                        <constraint firstItem="Bki-w1-5C6" firstAttribute="top" secondItem="4iR-9E-wOx" secondAttribute="top" constant="54" id="hMN-ab-oC2"/>
+                                        <constraint firstItem="Bki-w1-5C6" firstAttribute="leading" secondItem="ffT-XI-3u2" secondAttribute="leading" constant="43" id="NdT-to-dgh"/>
+                                        <constraint firstItem="Bki-w1-5C6" firstAttribute="top" secondItem="ffT-XI-3u2" secondAttribute="top" constant="54" id="hMN-ab-oC2"/>
                                         <constraint firstAttribute="trailing" secondItem="Y5k-6d-RSf" secondAttribute="trailing" constant="43" id="omA-eJ-467"/>
-                                        <constraint firstItem="Y5k-6d-RSf" firstAttribute="leading" secondItem="4iR-9E-wOx" secondAttribute="leading" constant="43" id="seP-wt-5f9"/>
+                                        <constraint firstItem="Y5k-6d-RSf" firstAttribute="leading" secondItem="ffT-XI-3u2" secondAttribute="leading" constant="43" id="seP-wt-5f9"/>
                                         <constraint firstItem="Y5k-6d-RSf" firstAttribute="top" secondItem="Bki-w1-5C6" secondAttribute="bottom" constant="24" id="yBI-ba-vkV"/>
                                     </constraints>
                                 </collectionViewCellContentView>
@@ -64,7 +63,7 @@
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vuk-2D-MSY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-121.73913043478262" y="154.6875"/>
+            <point key="canvasLocation" x="42" y="178"/>
         </scene>
     </scenes>
     <resources>
