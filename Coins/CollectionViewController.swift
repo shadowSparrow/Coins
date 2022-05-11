@@ -7,11 +7,9 @@
 
 import UIKit
 
-
-
 class CollectionViewController: UICollectionViewController {
 
-    private let sectionInsents = UIEdgeInsets(top: 10, left: 10, bottom: 10, right: 10)
+    private let sectionInsents = UIEdgeInsets(top: 10, left: 20, bottom: 10, right: 20)
     private let interItemSpacing = 10
     private let interLineSpacing = 10
     private let itemsPerRow = 2
@@ -27,7 +25,7 @@ class CollectionViewController: UICollectionViewController {
 
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of items
-        return 3
+        return 4
     }
 
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
@@ -75,12 +73,12 @@ extension CollectionViewController : UICollectionViewDelegateFlowLayout {
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         
-        
-            let spacesCount = itemsPerRow - 1
-            let spacingPerRow = interItemSpacing * spacesCount
-            let itemWidth = screenWindh - CGFloat(spacingPerRow)
+        let spacesCount = itemsPerRow - 1
+        let spacingPerRow = interItemSpacing * spacesCount
+        let rowContentWith = screenWindh - sectionInsents.right - sectionInsents.left - CGFloat(spacingPerRow)
+        let itemWidth = rowContentWith / CGFloat(itemsPerRow)
             
-            return CGSize(width: itemWidth, height: 100)
+        return CGSize(width: itemWidth, height: 100)
         
         
         
@@ -95,5 +93,10 @@ extension CollectionViewController : UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
         CGFloat(interItemSpacing)
     }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
+        CGFloat(interLineSpacing)
+    }
+
 }
 
