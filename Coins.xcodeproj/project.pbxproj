@@ -9,21 +9,23 @@
 /* Begin PBXBuildFile section */
 		04B386C5282BF92E00537E26 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B386C4282BF92E00537E26 /* AppDelegate.swift */; };
 		04B386C7282BF92E00537E26 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B386C6282BF92E00537E26 /* SceneDelegate.swift */; };
-		04B386C9282BF92E00537E26 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B386C8282BF92E00537E26 /* ViewController.swift */; };
 		04B386CC282BF92E00537E26 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04B386CA282BF92E00537E26 /* Main.storyboard */; };
 		04B386CE282BF92F00537E26 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04B386CD282BF92F00537E26 /* Assets.xcassets */; };
 		04B386D1282BF92F00537E26 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04B386CF282BF92F00537E26 /* LaunchScreen.storyboard */; };
+		04B386D9282C007B00537E26 /* CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B386D8282C007B00537E26 /* CollectionViewController.swift */; };
+		04B386DB282C042700537E26 /* CoinCellCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B386DA282C042700537E26 /* CoinCellCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		04B386C1282BF92E00537E26 /* Coins.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Coins.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		04B386C4282BF92E00537E26 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		04B386C6282BF92E00537E26 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		04B386C8282BF92E00537E26 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		04B386CB282BF92E00537E26 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		04B386CD282BF92F00537E26 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		04B386D0282BF92F00537E26 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		04B386D2282BF92F00537E26 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		04B386D8282C007B00537E26 /* CollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewController.swift; sourceTree = "<group>"; };
+		04B386DA282C042700537E26 /* CoinCellCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinCellCollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,8 +60,9 @@
 			children = (
 				04B386C4282BF92E00537E26 /* AppDelegate.swift */,
 				04B386C6282BF92E00537E26 /* SceneDelegate.swift */,
-				04B386C8282BF92E00537E26 /* ViewController.swift */,
 				04B386CA282BF92E00537E26 /* Main.storyboard */,
+				04B386DA282C042700537E26 /* CoinCellCollectionViewCell.swift */,
+				04B386D8282C007B00537E26 /* CollectionViewController.swift */,
 				04B386CD282BF92F00537E26 /* Assets.xcassets */,
 				04B386CF282BF92F00537E26 /* LaunchScreen.storyboard */,
 				04B386D2282BF92F00537E26 /* Info.plist */,
@@ -138,8 +141,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				04B386C9282BF92E00537E26 /* ViewController.swift in Sources */,
+				04B386D9282C007B00537E26 /* CollectionViewController.swift in Sources */,
 				04B386C5282BF92E00537E26 /* AppDelegate.swift in Sources */,
+				04B386DB282C042700537E26 /* CoinCellCollectionViewCell.swift in Sources */,
 				04B386C7282BF92E00537E26 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
