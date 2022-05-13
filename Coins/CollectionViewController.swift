@@ -6,7 +6,7 @@
 //
 
 import UIKit
-
+import SVGKit
 class CollectionViewController: UICollectionViewController {
 
     private let sectionInsents = UIEdgeInsets(top: 10, left: 20, bottom: 10, right: 20)
@@ -30,9 +30,13 @@ class CollectionViewController: UICollectionViewController {
 
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "Cell", for: indexPath) as! CoinCellCollectionViewCell
-    
+   
+        cell.contentView.addSubview(cell.getImageView()!)
+        /*
+        guard let image = cell.getImageView() else {return cell}
+        cell.addSubview(image)
         // Configure the cell
-    
+    */
         return cell
     }
 
@@ -78,7 +82,7 @@ extension CollectionViewController : UICollectionViewDelegateFlowLayout {
         let rowContentWith = screenWindh - sectionInsents.right - sectionInsents.left - CGFloat(spacingPerRow)
         let itemWidth = rowContentWith / CGFloat(itemsPerRow)
             
-        return CGSize(width: itemWidth, height: 100)
+        return CGSize(width: itemWidth, height: 150)
         
         
         
